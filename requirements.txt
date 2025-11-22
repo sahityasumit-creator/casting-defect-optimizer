@@ -1,11 +1,10 @@
 fastapi
 uvicorn[standard]
---index-url https://download.pytorch.org/whl/cpu
-torch==2.3.0
-torchvision==0.18.0
-d3rlpy[cpu]
 scikit-learn
 joblib
 numpy
 pandas
 openpyxl
+d3rlpy[cpu]
+torch==2.3.0 --index-url https://download.pytorch.org/whl/cpu
+torchvision==0.18.0 --index-url https://download.pytorch.org/whl/cpu
