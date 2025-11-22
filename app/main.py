@@ -3,7 +3,7 @@ from pydantic import BaseModel
 import joblib
 import numpy as np
 from d3rlpy.algos import BC
-from hybrid_policy import HybridPolicy
+from app.hybrid_policy import HybridPolicy
 
 app = FastAPI(title="Casting Defect Optimizer")
 
@@ -61,3 +61,4 @@ def predict(data: Input):
 @app.get("/")
 def home():
     return {"message": "Casting Defect Optimizer API is LIVE!"}
+
